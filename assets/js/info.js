@@ -25,9 +25,22 @@ let API_KEY ="Bearer 2H2SMlwuCiG_ENk1cA4v9BPCZ16BNmEY7esysJNeIrqHdSWYGzwsG0Dx62I
         .then(response => response.json())
         .then(response => {console.log(response)
             console.log(response.businesses[0].image_url);
-            let imageDate = new Image();
-            imageDate.src = response.businesses[0].image_url;
-            resultBody.appendChild(imageDate);
+            for ( let data of response.businesses){
+                let imageDate = new Image();
+                imageDate.src = data.image_url;
+                imageDate.width = 200;
+                imageDate.height = 200;
+                let cardBody = document.createElement('div');
+                cardBody.setAttribute('class', 'card');
+                cardBody.appendChild(imageDate);
+                let descriptionBody = document.createElement('div');
+                descriptionBody.setAttribute('class', 'container');
+                let title = document.createElement('h4');
+                title.textContent = data.name;
+                descriptionBody.appendChild(title);
+                cardBody.appendChild(descriptionBody);
+                resultBody.append(cardBody);
+        }
         })
         .catch(err => console.error(err));
 }
