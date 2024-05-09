@@ -8,41 +8,32 @@
     --matcha: #c3d69f;
   }
 .theme-img {
-    height: 200px;
+    height: 400px;
     width: 100%;
     margin-top: 25px;
-    opacity: 75%;
+    /* opacity: 75%; */
     
     /* margin-bottom: 25px; */
-    background-image: url("../images/tile-string-lights.jpg");
-    /* background-size: cover;  */
-    /* background-position: center; */
-    /* object-fit: contain; */
+    background-image: url("../images/Single_tungsten.png");
+    background-size: cover; 
+    background-position: center;
+    object-fit: contain;
 }
 
-.woman { 
-    opacity: 85%;
+.parent-container {
+    padding: 60px;
 
 }
+
+
 body {
     background: #c37857; 
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
     font-style: normal;
+    
 }
 
-/* .circle {
-    float: left;
-    height: 500px;
-    width: 500px;
-    padding: 75px;
-    
-   font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-   
-    background-image: url("../images/sapiens.webp");
-
-} */
 
 input[type=text], select {
     width: 100%;
@@ -52,6 +43,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family: "Shadows Into Light", cursive;
   }
   
   input[type=submit] {
@@ -63,10 +55,17 @@ input[type=text], select {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    
   }
+
+button {
+    font-family: "Shadows Into Light", cursive;
+    font-size: medium;
+}
   
   input[type=submit]:hover {
     background-color: #45a049;
+    
   }
   
   div {
@@ -76,7 +75,7 @@ input[type=text], select {
   }
   /* Split the screen in half */
 .split {
-  height: 100%;
+  /* height: 100%; */
   width: 50%;
   position: fixed;
   z-index: 1;
@@ -84,7 +83,7 @@ input[type=text], select {
   display: flex;
 }
 
-/ Control the left side /
+
 .left {
   left: 0;
   
