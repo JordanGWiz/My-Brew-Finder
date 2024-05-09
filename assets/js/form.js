@@ -13,7 +13,7 @@ function searchHandler(event){
     else{
         localStorage.setItem('brewInput', brewInput);
         localStorage.setItem('countryInput', countryInput);
-        localStorage.setItem('cityInput', brewInput);
+        localStorage.setItem('cityInput', cityInput);
     
         window.location.replace("./info.html");
     }
