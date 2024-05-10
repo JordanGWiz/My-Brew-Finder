@@ -80,9 +80,6 @@ function yelpQuery(event){
         })
         .catch(err => console.error(err));
 }
-
-$(document).ready(function(){
-  categoryHandler;
-  yelpQuery;
-})
+window.addEventListener('load', categoryHandler);
+window.addEventListener('load', yelpQuery);
 
