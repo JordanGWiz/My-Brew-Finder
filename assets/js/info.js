@@ -36,7 +36,7 @@ function yelpQuery(event){
 
       };
       
-      fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=${locationQuery}&term=${categoryQuery}&sort_by=rating&limit=3`, options)
+      fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=${locationQuery}&term=${categoryQuery}&sort_by=best_match&limit=3`, options)
         .then(response => {
           if (!response.ok) {
             throw response.json();
