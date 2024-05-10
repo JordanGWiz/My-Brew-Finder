@@ -15,7 +15,7 @@ function searchHandler(event){
         localStorage.setItem('countryInput', countryInput);
         localStorage.setItem('cityInput', cityInput);
     
-        window.location.replace("./info.html");
+        window.location.assign("./info.html");
     }
 
 }

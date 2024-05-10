@@ -2,12 +2,14 @@ const resultBody = document.getElementById("result-content");
 
 const category = localStorage.getItem('brewInput');
 let categoryQuery;
-
+const cityInput = localStorage.getItem('cityInput');
+const countryInput = localStorage.getItem('countryInput');
+let locationQuery = `Berlin, Germany`;
 if (category === 'coffee'){
     categoryQuery = 'Coffee & Tea';
 }
 else{
-    categoryQuery = 'Beer, Wine & Spirits'
+    categoryQuery = 'Beer, Wine & Spirits';
 }
 
 function apiTest(event){
@@ -21,10 +23,10 @@ let API_KEY ="Bearer 2H2SMlwuCiG_ENk1cA4v9BPCZ16BNmEY7esysJNeIrqHdSWYGzwsG0Dx62I
 
       };
       
-      fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=NYC&category=${categoryQuery}&sort_by=best_match&limit=3`, options)
+      fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=${locationQuery}&categories=${categoryQuery}&sort_by=rating&limit=3`, options)
         .then(response => response.json())
         .then(response => {console.log(response)
-            console.log(response.businesses[0].image_url);
+            console.log(response.businesses[0]);
             for ( let data of response.businesses){
                 let imageDate = new Image();
                 imageDate.src = data.image_url;
