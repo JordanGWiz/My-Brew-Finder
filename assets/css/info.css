@@ -24,8 +24,7 @@ body {
 
 header {
   padding: 20px;
-  font-family: "Verdana", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
-    Arial, sans-serif;
+  font-family: "Shadows Into Light", cursive;
   font-size: 25px;
   background-color: var(--burnt-brown);
   color: white;
@@ -87,11 +86,13 @@ div form select:hover {
   color: var(--white);
   font-size: 20px;
   font-weight: 550;
+  font-family: "Shadows Into Light", cursive;
   text-shadow: 1px 1px 2px var(--black);
   display: flex;
   justify-content: center;
   padding-top: 5px;
   margin-left: 40px;
+  text-decoration: none;
 }
 
 /*======= Containers with Yelp API Results======*/
