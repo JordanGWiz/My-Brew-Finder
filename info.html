@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results | Brew Finder</title>
+    <link rel="stylesheet" href="./assets/css/info.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Results | Brew Finder</title>
-  <link rel="stylesheet" href="./assets/css/info.css" />
-</head>
+  <body>
+    <header>Perfect Brews, Found For You!</header>
 
-<body>
-  <header>
-    Perfect Brews, Found For You!
-  </header>
 
-  <div>
+  <div class="top-filter">
     <form id="search-form">
       <select id="brew-input">
         <option value="" disabled selected>Brew Type...</option>
@@ -43,11 +41,10 @@
 
     <section>
       <h2>Showing <span id="brew-input"></span>results for <span id="city-input"></span>, <span id="'country-input"></span></h2>
+
       <div id="result-content"></div>
     </section>
 
-
-  <script src="./assets/js/info.js"></script>
-</body>
-
+    <script src="./assets/js/info.js"></script>
+  </body>
 </html>
