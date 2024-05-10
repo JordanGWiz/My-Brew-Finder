@@ -21,3 +21,4 @@ function searchHandler(event){
 }
 
 searchForm.addEventListener('submit', searchHandler);
+
