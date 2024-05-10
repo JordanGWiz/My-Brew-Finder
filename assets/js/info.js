@@ -46,3 +46,4 @@ let API_KEY ="Bearer 2H2SMlwuCiG_ENk1cA4v9BPCZ16BNmEY7esysJNeIrqHdSWYGzwsG0Dx62I
 }
 
 window.addEventListener('load', apiTest);
+
