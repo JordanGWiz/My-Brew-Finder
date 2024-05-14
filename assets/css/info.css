@@ -1,0 +1,133 @@
+/*General styling for the website*/
+:root {
+  --burnt-brown: #734444;
+  --terracotta: #c37857;
+  --lime: #eeedbe;
+  --plant-green: #99b27f;
+  --white: #fcfefe;
+  --black: #1d1716;
+  --matcha: #c3d69f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--terracotta);
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 20px;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 25px;
+  background-color: var(--burnt-brown);
+  color: white;
+  text-shadow: 1px 1px 2px var(--black);
+  display: flex;
+  justify-content: center;
+}
+
+#search-form {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--plant-green);
+}
+
+button {
+  background-color: var(--lime);
+  color: var(--black);
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 20px;
+  border: var(--plant-green);
+}
+
+button:hover {
+  background-color: var(--matcha);
+}
+
+.top-filter {
+  background-color: var(--plant-green);
+  width: 100%;
+  padding: 10px;
+}
+
+div form select {
+  background-color: var(--lime);
+  color: var(--black);
+  font-family: "Verdana", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  position: relative;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 20px;
+  border: var(--plant-green);
+}
+
+div form select:hover {
+  background-color: var(--matcha);
+}
+
+.go-home {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 550;
+  font-family: "Shadows Into Light", cursive;
+  text-shadow: 1px 1px 2px var(--black);
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+/*======= Containers with Yelp API Results======*/
+
+#result-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  width: calc(50% - 10px);
+  min-width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--matcha);
+  border-radius: 8px;
+  margin-left: auto;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.container {
+  padding: 15px;
+}
+
+.container h4 {
+  margin: 0;
+  color: #333;
+}

@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Brew Finder</title>
-    <link rel="icon" href="">
-    <link href="./assets/css/form.css" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brew Finder</title>
+  <link rel="icon" href="">
+  <link href="./assets/css/form.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./assets/images/IMG_2798.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Zeyada&display=swap" rel="stylesheet">
+</head>
 
-  <body>
-    <header>
-      My Personal Brewfinder
-    </header>
-    <img src="" alt=""> <!--Logo/image next to the form possibly?-->
+<body>
+  <header>
+    <img src="./assets/images/logo.webp" alt="logo" class="logo">
+    <!-- <h1>My Brewfinder</h1> -->
+  
+  </header>
+  <section class="theme-img"></section>
+
+  <div class="parent-container">
     <div>
-      <h1>Find The Perfect Brews</h1>
-      <form id="search-form">
-        <select id="brew-input">
-          <option value="" disabled selected>Brew Type...</option>
-          <option value="Coffee">Coffee</option>
-          <option value="Beer">Beer</option>
-        </select>
-        <select id="country-input">
-          <option value="" disabled selected>Select a Country...</option>
-          <option value="united-states">United States</option>
-          <option value="germany">Germany</option>
-          <option value="ireland">Ireland</option>
-          <option value="spain">Spain</option>
-          <option value="Country #5">Country #5</option>
-          <option value="Country #6">Country #6</option>
-          <option value="Country #7">Country #7</option>
-        </select>
-        <!--Not sure if we want to put cities in or just have the results give the main big cities in the country.
-        We'd have to change the search so that only corresponding cities show up for their contries but I can look into that too.-->
-        <select id="city-input">
-          <option value="" disabled selected>Select a City...</option>
-        </select>
-        <input type="submit" value="Find My Brews!">
-      </form>
+      
+  
+        <img src="../My-Brew-Finder/assets/images/sapiens_1.webp" alt="avatar woman">
+      
     </div>
 
+    <div >
+      
+        <form id="search-form">
+          <label for="brew-input">Brew Type:</label>
+          <select id="brew-input">
+            <option value="" disabled selected>Select</option>
+            <option value="Coffee">Coffee</option>
+            <option value="Beer">Beer</option>
+          </select>
+          <label for="country-input">Country:</label>
+          <input id="country-input">
+          <label for="city-input">City:</label>
+          <input id="city-input">
+          <input type="submit" value="Find My Brews!">
+        </form>
+      
+    </div>
+
+  </div>
+
+
+  <footer>
+    <h2>FIND THE PERFECT BREW</h2>
+
+  </footer>
 
 
 
+  <script src="./assets/js/form.js"></script>
+</body>
 
-    <script src="./assets/js/form.js"></script>
-  </body>
 </html>
