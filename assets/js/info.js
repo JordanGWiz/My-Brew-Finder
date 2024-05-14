@@ -36,7 +36,7 @@ function yelpQuery(event){
 
       };
       
-      fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=${locationQuery}&term=${categoryQuery}&sort_by=rating&limit=3`, options)
+      fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/MphfKkYFEe0BDQ6hZ0A5fA`, options)
         .then(response => {
           if (!response.ok) {
             throw response.json();
@@ -49,6 +49,7 @@ function yelpQuery(event){
               cardBody.textContent="No business found! Try again with a different input!"
             }
             else{
+              console.log(response.json());
               for ( let data of response.businesses){
                   let imageDate = new Image();
                   imageDate.src = data.image_url;
@@ -59,16 +60,31 @@ function yelpQuery(event){
                   cardBody.appendChild(imageDate);
                   let descriptionBody = document.createElement('div');
                   descriptionBody.setAttribute('class', 'container');
-                  let title = document.createElement('a');
                   title.textContent = data.name;
+
+                  let title = document.createElement('a');
                   if(data.attributes.menu_url){
                     title.setAttribute('href', data.attributes.menu_url);
                   }
                   else{
                     title.setAttribute('href', data.url);
                   }
-                  
+
+
+                  let address = document.createElement('p');
+                  if (data.location.display_address){
+                    address.textContent += `${data.location.display_address}\n\n`;
+                  }
+                  else{
+                    address.textContent += `${cityInput}, ${countryInput}\n\n`;
+                  }
+
+                  if (data.rating){
+                    address.textContent += `Rating : ${data.rating}/5`;
+                  }
+
                   descriptionBody.appendChild(title);
+                  descriptionBody.appendChild(address);
                   cardBody.appendChild(descriptionBody);
                   resultBody.appendChild(cardBody);
           }
