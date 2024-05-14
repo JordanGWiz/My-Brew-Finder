@@ -30,6 +30,7 @@ header {
 
 .logo {
   height: 200px;
+  background-position: center;
 
 }
 
@@ -41,14 +42,16 @@ h1 {
 }
 
 h2 {
-  background-color: #734444;
+  background-color: #99b27f;
   font-size: 30px;
+  color: black;
+  text-align: center;
 
 
 }
 
 .theme-img {
-  height: 400px; 
+  height: 200px; 
   width: 100%;
   /* margin-top: 25px; */
   /* opacity: 75%; */
@@ -129,7 +132,9 @@ div {
 
 }
 
-
+footer {
+  color: white;
+}
 
 
 
