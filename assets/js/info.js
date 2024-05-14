@@ -122,7 +122,7 @@ searchForm.addEventListener('submit', searchHandler);
 
 let cityName = localStorage.getItem('cityInput');
 let countryName = localStorage.getItem('countryInput');
-let resultInfo = document.getElementById('result-info');
+let resultInfo = document.getElementById('result-content');
 const parcer = new DOMParser();
 
 function fetchCityInfo() {
