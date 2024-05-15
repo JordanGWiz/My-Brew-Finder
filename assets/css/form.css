@@ -30,7 +30,9 @@ header {
 
 .logo {
   height: 200px;
-  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -53,24 +55,21 @@ h2 {
 .theme-img {
   height: 200px; 
   width: 100%;
-  /* margin-top: 25px; */
-  /* opacity: 75%; */
-
-  /* margin-bottom: 25px; */
   background-image: url("../images/Single_tungsten.png");
   background-size:cover;
   background-position: center;
-
   background-repeat:no-repeat;
 
 
 
 }
 
-
+label {
+  font-size: 25px;
+}
 
 body {
-  /* background: #c37857;  */
+  
   font-family: "Shadows Into Light", cursive;
   font-weight: 400;
   font-style: normal;
@@ -78,10 +77,19 @@ body {
 
 }
 
-
+input {
+  width: 57%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ 
+}
 input[type=text],
 select {
-  width: 100%;
+  width: 57%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -92,7 +100,7 @@ select {
 }
 
 input[type=submit] {
-  width: 100%;
+  width: 57%;
   background-color: #99b27f;
   font-family: "Shadows Into Light", cursive;
   font-size: medium;
@@ -102,82 +110,35 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-
+  font-size: 20px;
 }
 
-button {
-  font-family: "Shadows Into Light", cursive;
-  font-size: medium;
-}
+
 
 input[type=submit]:hover {
   background-color: #c3d69f;
   ;
   font-family: "Shadows Into Light", cursive;
-  font-size: medium;
-  color: black;
+    color: black;
 
 }
 
-div {
-  border-radius: 5px;
-  /* background-color: #c37857;  */
-  padding: 20px;
-}
+
 
 .parent-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  
+}
+form {
+  padding: 75px;
+}
+
+.avatar-woman-image {
+  width: 100%;
+  padding: 0;
 
 }
 
-footer {
-  color: white;
-}
-
-
-
-
-
-/* Style the image inside the centered container, if needed
-  .centered img {
-    width: 100%;
-    border-radius: 50%;
-  } */
-@media (max-width: 768px) {
-
-  /*Stack the split sections vertically on smaller screens */
-
-
-  /* Adjust form input fields and buttons for better usability */
-  input[type="text"],
-  textarea {
-    padding: 8px;
-    font-size: 16px;
-  }
-
-  button {
-    width: 100%;
-    padding: 12px;
-  }
-
-  /* Adjust header for smaller screens */
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  img.responsive {
-    width: 100%;
-    max-width: 600px;
-    min-width: 150px;
-    /* Minimum width to prevent the image from being too small */
-    height: auto;
-  }
-
-  /* .theme-img {
-    height: 200px;
-  } */
-}
