@@ -41,7 +41,6 @@ header {
   display: flex;
   justify-content: center;
   background-color: var(--plant-green);
-  
 }
 
 button {
@@ -54,8 +53,6 @@ button {
   /* font-size: 16px; */
   margin-right: 20px;
   border: var(--plant-green);
-  
-  
 }
 
 button:hover {
@@ -84,10 +81,6 @@ div form select {
   font-size: 20px;
 }
 
-/* div form select:hover {
-  background-color: var(--matcha);
-} */
-
 .go-home {
   color: var(--white);
   font-size: 20px;
@@ -111,11 +104,12 @@ div form select {
   align-items: flex-start;
   gap: 20px;
   padding: 10px;
+  word-break: break-all;
 }
 
 .card {
   width: calc(50% - 10px);
-  min-width: 250px;
+  min-width: 240px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: var(--matcha);
   border-radius: 8px;
@@ -127,6 +121,7 @@ div form select {
   height: 200px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
+  margin-left: auto;
 }
 
 .container {
@@ -147,10 +142,9 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
   /* font-size: 20px; */
- 
 }
 
-input[type=submit] {
+input[type="submit"] {
   font-family: "Shadows Into Light", cursive;
   font-size: 20px;
   background-color: #eeedbe;
@@ -159,4 +153,68 @@ input[type=submit] {
 
 label {
   font-size: 20px;
+}
+
+.searchmatch {
+  background-color: var(--plant-green);
+}
+
+.container body {
+  background-color: var(--plant-green);
+}
+
+/*wiki style*/
+.ui-helper-hidden-accessible {
+  display: none !important;
+}
+
+.ui-autocomplete {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  display: none;
+  min-width: 160px;
+  padding: 4px 0;
+  margin: 0 0 10px 25px;
+  list-style: none;
+  background-color: #ffffff;
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+}
+
+.ui-menu-item > a.ui-corner-all {
+  display: block;
+  padding: 3px 15px;
+  clear: both;
+  font-weight: normal;
+  line-height: 18px;
+  color: #555555;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.ui-state-hover,
+.ui-state-active {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0088cc;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  background-image: none;
 }
