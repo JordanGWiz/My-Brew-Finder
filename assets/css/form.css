@@ -101,9 +101,9 @@ select {
 
 input[type=submit] {
   width: 57%;
-  background-color: #99b27f;
+  background-color: #eeedbe;
   font-family: "Shadows Into Light", cursive;
-  font-size: medium;
+  
   color: black;
   padding: 14px 20px;
   margin: 8px 0;
