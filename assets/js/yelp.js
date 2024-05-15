@@ -65,6 +65,7 @@ function yelpQuery(event){
 
 
                 let address = document.createElement('p');
+                address.setAttribute('style', 'white-space: pre;');
                 if (data.location.display_address){
                   address.textContent += `${data.location.display_address}\n\n`;
                 }
