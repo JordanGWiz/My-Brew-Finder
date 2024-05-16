@@ -76,8 +76,7 @@ function fetchCityInfo() {
       })
       .catch(err => { 
         console.error(err) });
-        
-
+      
 } 
 
 window.addEventListener('load', fetchCityInfo);

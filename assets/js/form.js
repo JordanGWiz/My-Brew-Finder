@@ -19,7 +19,7 @@ function searchHandler(event){
     }
 
 }
-
+ 
 searchForm.addEventListener('submit', searchHandler);
 
 // Get modal, button to open modal, and <span> that closes the modal
