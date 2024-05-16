@@ -5,9 +5,9 @@ let resultInfo = document.getElementById("result-info");
 const parcer = new DOMParser();
 
 function fetchCityInfo() {
-  const apiUrlCity = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${cityName}&format=json`;
-  const apiUrlCountry = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${countryName}&format=json`;
-  const apiUrlInfo = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${category}&format=json`;
+  const apiUrlCity = `https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${cityName}&format=json`;
+  const apiUrlCountry = `https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${countryName}&format=json`;
+  const apiUrlInfo = `https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${category}&format=json`;
 
   let cardBody = document.createElement("div");
   cardBody.setAttribute("class", "card");
