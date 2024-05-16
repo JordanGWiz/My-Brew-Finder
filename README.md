@@ -17,10 +17,11 @@ To clone the application, click the green button labeled, "code." Copy the URL f
 
 ## Usage
 
-Beginning on "form.html," the user will see the "My Brew Finder" logo in the header and a form to collect user input. After completing the form and upon clicking the "FIND MY BREW!" button, the user is directed to "info.html." The user will see the heading, "THE PERFECT BREW, FOUND FOR YOU!" and is presented with search results from Wikipedia and Yelp. There is a modal which provides information about the creators. The user can click the "go back" button to return to the home page.
+Beginning on "index.html," the user will see the "My Brew Finder" logo in the header and a form to collect user input. After completing the form and upon clicking the "FIND MY BREW!" button, the user is directed to "info.html." The user will see the heading, "THE PERFECT BREW, FOUND FOR YOU!" and is presented with search results from Wikipedia and Yelp. There is a modal which provides information about the creators. The user can click the "go back" button to return to the home page.
 
 
 <img src= "./assets/images/Screenshot1.png" alt="screenshot">
+<img src= "./assets/images/Screenshot2.png" alt="screenshot">
 
 
 ## How-To-Guide
@@ -62,4 +63,4 @@ Beginning on "form.html," the user will see the "My Brew Finder" logo in the hea
  
 Please refer to the LICENSE in the repo.
 
-# [link to completed project](________________)
+# [link to completed project](https://jordangwiz.github.io/My-Brew-Finder/)
