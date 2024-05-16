@@ -32,6 +32,7 @@ function yelpQuery(event){
       fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=${locationQuery}&term=${categoryQuery}&sort_by=best_match&limit=3`, options)
         .then(response => {
           if (!response.ok) {
+            resultBody.innerHTML=`<h1>Server Error!  ${response.status} ${response.statusText}</h1>`
             throw response.json();
           }
           return response.json();
@@ -64,23 +65,34 @@ function yelpQuery(event){
 
 
 
-                let address = document.createElement('p');
-                address.setAttribute('style', 'white-space: pre;');
+                let desc = document.createElement('p');
+                desc.setAttribute('style', 'white-space: pre;');
                 if (data.location.display_address){
-                  address.textContent += `${data.location.display_address}\n\n`;
+                  desc.textContent += `${data.location.display_address}\n`;
                 }
                 else{
-                  address.textContent += `${cityInput}, ${countryInput}\n\n`;
+                  desc.textContent += `${cityInput}, ${countryInput}\n`;
+                }
+
+                if (data.display_phone){
+                  desc.textContent += `${data.display_phone}\n\n`
                 }
 
                 if (data.rating){
-                  address.textContent += `Rating : ${data.rating}/5`;
+                  desc.textContent += `Rating : ${data.rating}/5 \n`;
+                }
+
+                if (data.transactions){
+                  for ( let transaction of data.transactions){
+                    desc.textContent += `${transaction} ✔️`
+                  }
                 }
 
                 descriptionBody.appendChild(title);
-                descriptionBody.appendChild(address);
+                descriptionBody.appendChild(desc);
                 cardBody.appendChild(descriptionBody);
                 resultBody.appendChild(cardBody);
+
           }
       }
         })
@@ -107,4 +119,5 @@ function searchHandler(event){
 }
 categoryHandler();
 yelpQuery();
+
 searchForm.addEventListener('submit', searchHandler);
