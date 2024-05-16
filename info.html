@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Zeyada&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
   </head>
 
   <body>
@@ -25,6 +27,7 @@
       </select>
       <label for="country-input">Country:</label>
       <input id="country-input">
+      <script src="assets/js/info.js"></script>
       <label for="city-input">City:</label>
       <input id="city-input">
       <input type="submit" value="FIND MY BREW!">
@@ -33,7 +36,7 @@
   </div>
 
     <section>
-      <h2>Showing <span id="brew-input"></span>results for <span id="city-input"></span>, <span id="'country-input"></span></h2>
+      <h2>Showing <span id="brew"></span> results for <span id="city"></span>, <span id="country"></span></h2>
 
       <div id="result-content"></div>
       <div id="result-info"></div>
