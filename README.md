@@ -1,7 +1,7 @@
 # My-Brew-Finder
 
 ## Description
-"My Brew Finder" is a web app for travelers, passionate about local beverages. Using the Wikipedia API, it provides information about the destination, including population, a general description, and location. Leveraging the Yelp Fusion API, the app identifies and reviews coffee shops (or breweries) in the user provided city. This dual functionality helps travelers plan visits to local coffee shops and breweries, ensuring a rich tasting experience.
+"MyBrewFinder" is a web app for travelers, passionate about local beverages. Using the Wikipedia API, it provides information about the destination, including population, a general description, and location. Leveraging the Yelp Fusion API, the app identifies and reviews coffee shops (or breweries) in the user provided city. This dual functionality helps travelers plan visits to local coffee shops and breweries, ensuring a rich tasting experience.
 
 ## Table of Contents 
 
@@ -17,7 +17,7 @@ To clone the application, click the green button labeled, "code." Copy the URL f
 
 ## Usage
 
-Beginning on "form.html," the user will see the "My Brew Finder" logo in the header and a form to collect user input. After completing the form and upon clicking the "FIND MY BREW!" button, the user is directed to "info.html." The user will see the heading, "THE PERFECT BREW, FOUND FOR YOU!" and is presented with search results from Wikipedia and Yelp. There is a modal which provides information about the creators. The user can click the "go back" button to return to the home page.
+Beginning on "index.html," the user will see the "MyBrewFinder" logo in the header and a form to collect user input. After completing the form and upon clicking the "FIND MY BREW!" button, the user is directed to "info.html." The user will see the heading, "THE PERFECT BREW, FOUND FOR YOU!" and is presented with search results from Wikipedia and Yelp. There is a modal which provides information about the creators. The user can click the "go back" button to return to the home page.
 
 
 <img src= "./assets/images/Screenshot1.png" alt="screenshot">
@@ -25,7 +25,7 @@ Beginning on "form.html," the user will see the "My Brew Finder" logo in the hea
 
 ## How-To-Guide
 <ul>    
-    <li>GIVEN the MyBrewFinder</li>
+    <li>GIVEN the MyBrewFinder app</li>
     <li>WHEN I load the app</li>
     <li>THEN I am presented with the landing page containing a "BrewMasters" button and form with inputs for brew type, country, and city</li>
     <li>WHEN I click the BrewMasters button</li>
