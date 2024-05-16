@@ -272,7 +272,7 @@ form {
   background-color: var(--burnt-brown);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap:
+  
 }
 
 .modal-body {
