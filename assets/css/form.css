@@ -267,19 +267,24 @@ form {
 }
 
 .modal-profile {
-  margin: 10px;
-  padding: 10px;
   background-color: var(--burnt-brown);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  flex: 0 49%;
+  height: 50%;
+  margin-bottom: 1%;
   
+}
+
+.modal-text {
+  padding-left: 50px;
 }
 
 .modal-body {
   color: var(--white);
-  padding: 2px 16px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 
 a {
   color: var(--white);
