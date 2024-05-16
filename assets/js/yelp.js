@@ -29,7 +29,7 @@ function yelpQuery(event) {
   };
 
   fetch(
-    `https://api.yelp.com/v3/businesses/search?location=${locationQuery}&term=${categoryQuery}&sort_by=best_match&limit=3`,
+    `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=${locationQuery}&term=${categoryQuery}&sort_by=best_match&limit=3`,
     options
   )
     .then((response) => {
