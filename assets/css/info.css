@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: "Shadows Into Light", cursive; */
 }
 
 body {
@@ -20,12 +21,13 @@ body {
   color: var(--black);
   display: flex;
   flex-direction: column;
+  font-family: "Shadows Into Light", cursive;
 }
 
 header {
   padding: 20px;
   font-family: "Shadows Into Light", cursive;
-  font-size: 25px;
+  font-size: 30px;
   background-color: var(--burnt-brown);
   color: white;
   text-shadow: 1px 1px 2px var(--black);
@@ -35,10 +37,11 @@ header {
 
 #search-form {
   width: 100%;
-  height: 40px;
+  /* height: 40px; */
   display: flex;
   justify-content: center;
   background-color: var(--plant-green);
+  
 }
 
 button {
@@ -48,9 +51,11 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  /* font-size: 16px; */
   margin-right: 20px;
   border: var(--plant-green);
+  
+  
 }
 
 button:hover {
@@ -64,23 +69,24 @@ button:hover {
 }
 
 div form select {
-  background-color: var(--lime);
+  /* background-color: var(--lime); */
   color: var(--black);
-  font-family: "Verdana", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
-    Arial, sans-serif;
+  font-family: "Shadows Into Light", cursive;
   position: relative;
   padding: 10px 22px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+
   margin-right: 20px;
   border: var(--plant-green);
+  border-radius: 4px;
+  font-size: 20px;
 }
 
-div form select:hover {
+/* div form select:hover {
   background-color: var(--matcha);
-}
+} */
 
 .go-home {
   color: var(--white);
@@ -130,4 +136,27 @@ div form select:hover {
 .container h4 {
   margin: 0;
   color: #333;
+}
+
+input {
+  /* width: 57%; */
+  /* padding: 30px; */
+  margin: 2px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* font-size: 20px; */
+ 
+}
+
+input[type=submit] {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 20px;
+  background-color: #eeedbe;
+  border: none;
+}
+
+label {
+  font-size: 20px;
 }
