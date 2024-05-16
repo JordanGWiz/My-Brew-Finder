@@ -1,7 +1,7 @@
 let cityName = localStorage.getItem('cityInput');
 let countryName = localStorage.getItem('countryInput');
 let brewInput = localStorage.getItem('brewInput');
-let resultInfo = document.getElementById('result-content');
+let resultInfo = document.getElementById('result-info');
 const parcer = new DOMParser();
 
 function fetchCityInfo() {

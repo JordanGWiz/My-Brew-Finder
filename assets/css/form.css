@@ -48,8 +48,7 @@ h2 {
   font-size: 30px;
   color: black;
   text-align: center;
-
-
+  padding-left: 135px;
 }
 
 .theme-img {
@@ -194,10 +193,14 @@ form {
   -moz-border-radius: 0px;
   background-image: none;
 }
-
-/*#myBtn {
-  float: right;           button floating
-}*/
+#myBtn {
+  float: right;  
+  margin: 10px;     
+  background-color: var(--black);
+  color: var(--matcha);  
+  padding: 5px;
+  border-radius: 12px;
+}
 
 
 .modal {
@@ -224,18 +227,11 @@ form {
   position: fixed;
   bottom: 0;
   background-color: var(--terracotta);
-  width: 90%;
+  width: 100%;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
   animation-duration: 0.4s
-}
-
-
-.modal-profile {
-  margin: 5px;
-  background-color: var(--burnt-brown);
-  width: 50%;
 }
 
 
@@ -267,9 +263,16 @@ form {
   color: var(--black);
 }
 
+.modal-profile {
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--burnt-brown);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:
+}
 
 .modal-body {
-  display: flex;
   color: var(--white);
   padding: 2px 16px;
 }
