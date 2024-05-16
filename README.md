@@ -21,7 +21,7 @@ Beginning on "index.html," the user will see the "MyBrewFinder" logo in the head
 
 
 <img src= "./assets/images/Screenshot1.png" alt="screenshot">
-
+<img src= "./assets/images/Screenshot2.png" alt="screenshot">
 
 ## How-To-Guide
 <ul>    
@@ -62,4 +62,4 @@ Beginning on "index.html," the user will see the "MyBrewFinder" logo in the head
  
 Please refer to the LICENSE in the repo.
 
-# [link to completed project](________________)
+# [link to completed project](https://jordangwiz.github.io/My-Brew-Finder/)
