@@ -25,7 +25,7 @@ Beginning on "form.html," the user will see the "My Brew Finder" logo in the hea
 
 ## How-To-Guide
 <ul>    
-    <li>GIVEN the My Brew Finder</li>
+    <li>GIVEN the MyBrewFinder</li>
     <li>WHEN I load the app</li>
     <li>THEN I am presented with the landing page containing a "BrewMasters" button and form with inputs for brew type, country, and city</li>
     <li>WHEN I click the BrewMasters button</li>

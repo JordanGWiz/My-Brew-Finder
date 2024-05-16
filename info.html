@@ -15,28 +15,32 @@
   </head>
 
   <body>
-    <header>THE PERFECT BREW, FOUND FOR YOU!</header>
+    <header>
+      <img src="./assets/images/logo.webp" class="tiny-guy" />THE PERFECT BREW,
+      FOUND FOR YOU!<img src="./assets/images/logo.webp" class="tiny-guy" />
+    </header>
 
-
-  <div class="top-filter">
-    <form id="search-form">
-      <select id="brew-input">
-        <option value="" disabled selected>Brew Type</option>
-        <option value="Coffee">Coffee</option>
-        <option value="Beer">Beer</option>
-      </select>
-      <label for="country-input">Country:</label>
-      <input id="country-input">
-      <script src="assets/js/info.js"></script>
-      <label for="city-input">City:</label>
-      <input id="city-input">
-      <input type="submit" value="FIND MY BREW!">
-      <a href="./form.html" >&larr; Go back.</a>
-    </form>
-  </div>
+    <div class="top-filter">
+      <form id="search-form">
+        <select id="brew-input">
+          <option value="" disabled selected>Brew Type</option>
+          <option value="Coffee">Coffee</option>
+          <option value="Beer">Beer</option>
+        </select>
+        <label for="country-input" class="input-title">Country:</label>
+        <input id="country-input" />
+        <label for="city-input" class="input-title">City:</label>
+        <input id="city-input" />
+        <input type="submit" value="FIND MY BREW!" />
+        <a href="./form.html" class="go-home">&larr; Go back.</a>
+      </form>
+    </div>
 
     <section>
-      <h2>Showing <span id="brew"></span> results for <span id="city"></span>, <span id="country"></span></h2>
+      <h2>
+        Showing <span id="brew-input"></span>results for
+        <span id="city-input"></span>, <span id="'country-input"></span>
+      </h2>
 
       <div id="result-content"></div>
       <div id="result-info"></div>
