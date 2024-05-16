@@ -1,5 +1,6 @@
 let cityName = localStorage.getItem('cityInput');
 let countryName = localStorage.getItem('countryInput');
+let brewInput = localStorage.getItem('brewInput');
 let resultInfo = document.getElementById('result-content');
 const parcer = new DOMParser();
 
@@ -75,10 +76,15 @@ function fetchCityInfo() {
       })
       .catch(err => { 
         console.error(err) });
-        
-
-}                     
+      
+} 
 
 window.addEventListener('load', fetchCityInfo);
 
+let brew = document.getElementById('brew');
+brew.textContent = brewInput
+let city = document.getElementById('city');
+city.textContent = cityName
+let country = document.getElementById('country');
+country.textContent = countryName
 
