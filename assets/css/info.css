@@ -111,7 +111,6 @@ div form select {
 #result-info {
   flex: 1;
   padding: 5px;
-  border: 1px solid var(--burnt-brown);
   border-radius: 8px;
   box-sizing: border-box;
 }
