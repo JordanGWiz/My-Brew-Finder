@@ -91,15 +91,29 @@ div form select {
   text-decoration: none;
 }
 
-/*======= Containers with Yelp API Results======*/
+/*======= Containers Results======*/
+.result-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
 
 #result-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 5px;
+  gap: 10px;
   padding: 5px;
+  box-sizing: border-box;
+}
+
+#result-info {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid var(--burnt-brown);
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 #result-content,
@@ -155,13 +169,14 @@ input {
   font-weight: bolder;
 }
 
-input[type="submit"] {
+#search-form input[type="submit"] {
   font-family: "Shadows Into Light", cursive;
   font-size: 20px;
   background-color: #eeedbe;
   border: none;
   padding: 10px;
   font-weight: bolder;
+  min-width: 150px;
 }
 
 label {
@@ -176,7 +191,7 @@ label {
   background-color: var(--plant-green);
 }
 
-/*=========wiki style==============*/
+/*=========Drop Down Style==============*/
 
 .ui-helper-hidden-accessible {
   display: none !important;
@@ -231,4 +246,39 @@ label {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   background-image: none;
+}
+
+/*=======Media Queries========*/
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .result-container {
+    flex-direction: column;
+  }
+
+  #result-info {
+    margin-top: 20px;
+  }
+
+  button {
+    margin-right: 10px;
+  }
+
+  div form select {
+    width: 100%;
+  }
+
+  #search-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #search-form input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+  }
 }
