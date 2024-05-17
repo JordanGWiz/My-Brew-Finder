@@ -56,6 +56,9 @@ Beginning on "index.html," the user will see the "My Brew Finder" logo in the he
     <li>Tutoring session with Alexis San Javier</li>
     <li>Office hours with Anthony Barragan</li>
     <li>In collaboration with Jordan Gonzales, Justin Herrera, Renz Supnet, and Heather Weltzien</li>
+    <li><a href=" https://robwu.nl/cors-anywhere.html">Demo</a></li>
+    <li><a href="https://github.com/Rob--W/cors-anywhere/">Source code</a></li>
+    <li><a href="https://github.com/Rob--W/cors-anywhere/#documentation">Documentation</a></li>
     
 </ul>
 
